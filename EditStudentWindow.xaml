@@ -1,0 +1,30 @@
+﻿<Window x:Class="StudentsApp.EditStudentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentsApp"
+        mc:Ignorable="d"
+        Title="Редактирование студента" Height="250" Width="300">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Content="Имя:"/>
+        <TextBox x:Name="FirstNameTextBox" Grid.Row="1" Margin="0,0,0,10"/>
+        <Label Grid.Row="2" Content="Фамилия:"/>
+        <TextBox x:Name="LastNameTextBox" Grid.Row="3" Margin="0,0,0,10"/>
+        <Label Grid.Row="4" Content="Средний балл:"/>
+        <TextBox x:Name="AverageScoreTextBox" Grid.Row="5"/>
+        <StackPanel Grid.Row="6" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,0,0">
+            <Button x:Name="SaveButton" Content="Сохранить" Width="80" Margin="5,0" Click="SaveButton_Click"/>
+            <Button x:Name="CancelButton" Content="Отмена" Width="80" Margin="5,0" Click="CancelButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

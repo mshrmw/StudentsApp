@@ -1,0 +1,23 @@
+﻿<Window x:Class="StudentsApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentsApp"
+        mc:Ignorable="d"
+                Title="Студенты" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <DataGrid x:Name="DataGrid" AutoGenerateColumns="True" Grid.Column="0"/>
+        <Button x:Name="Filter" Grid.Column="1" Content="Фильтрация" HorizontalAlignment="Left" Margin="268,49,0,0" VerticalAlignment="Top" Height="34" Width="122" Click="Filter_Click"/>
+        <TextBox x:Name="FilterTextBox" Grid.Column="1" HorizontalAlignment="Left" Margin="77,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="191" Height="34"/>
+        <Label Grid.Column="1" Content="Фамилия:" HorizontalAlignment="Left" Margin="77,23,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="Delete" Grid.Column="1" Content="Удалить" HorizontalAlignment="Left" Margin="268,130,0,0" VerticalAlignment="Top" Height="34" Width="122" Click="Delete_Click"/>
+        <Button x:Name="Add" Grid.Column="1" Content="Добавить" HorizontalAlignment="Left" Margin="268,0,0,0" VerticalAlignment="Center" Height="34" Width="122" Click="Add_Click" />
+        <Button x:Name="Edit" Grid.Column="1" Content="Редактировать" HorizontalAlignment="Left" Margin="268,272,0,0" VerticalAlignment="Top" Height="34" Width="122" Click="Edit_Click" />
+
+    </Grid>
+</Window>
